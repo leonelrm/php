@@ -6,23 +6,23 @@ USE DB_MONUMENT;
 
 CREATE TABLE Monument (
     ID_Monument INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    Nom_Monument VARCHAR(30),
-    Arrondissement_Monument INT(2),
-    Adresse_Monument VARCHAR(150),
-    Site_Web_Monument VARCHAR(100),
+    Nom_Monument VARCHAR(30) NOT NULL unique,
+    Arrondissement_Monument INT(2) NOT NULL,
+    Adresse_Monument VARCHAR(150) NOT NULL,
+    Site_Web_Monument VARCHAR(100) NOT NULL,
     FK_ID_TYPE_MONUMENT INT(5)
 )ENGINE=InnoDB;
 
 
 CREATE TABLE TYPE_Monument (
     ID_TYPE_Monument INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    Libelle_TYPE_Monument VARCHAR(50)
+    Libelle_TYPE_Monument VARCHAR(50) unique NOT NULL check(Libelle_TYPE_Monument<>"")
 )ENGINE=InnoDB;
 
 
 CREATE TABLE Station (
     ID_Station INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    Nom_Station VARCHAR(50)
+    Nom_Station VARCHAR(50) NOT NULL unique
 )ENGINE=InnoDB;
 
 
