@@ -1,22 +1,22 @@
 <html>
 <head>
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<?php
+  session_start();
+  
+?>
 </head>
-<body>
+<body style='background-color: gray; text-align: center;'>
 <h1>TYPE MONUMENTS</h1>
-<div>
-    <form action="" method="post">
-    <label for="name" >Libelle:</label> 
-    <input type="text" name="Libelle"><br>
-    <input type="submit">
-    </form>
-</div>
-<form>
-  <div class="form-group">
+
+
+  <form action="TypeMonumentCreeraccept_prepare.php" method="post">
     <label for="libelle">Libelle</label>
-    <input type="libelle" class="form-control" id="libelle" aria-describedby="emailHelp" placeholder="Entrez  un Monument">
-  </div>  
-  <button type="submit" class="btn btn-primary">Valider</button>
-</form>
+    <input type="text" id="id_libelle" name="libelle"  placeholder="Entrez  un Monument" autofocus>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary">Valider</button>
+  </form>
+
 </body>
 </html>

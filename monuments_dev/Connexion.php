@@ -4,7 +4,7 @@
 		// --------------------------------------------------------------
 		// Connection à la Base de Données (via PDO)
 		$pdo_hostname = 'localhost'; // voir hébergeur ou "localhost" en local
-		$pdo_database = 'db_monume'; // nom de la BdD
+		$pdo_database = 'db_monument'; // nom de la BdD
 		$pdo_username = 'root'; // identifiant "root" en local
 		$pdo_password = ''; // mot de passe (vide en local)
 	
@@ -18,7 +18,7 @@
 				PDO::ATTR_PERSISTENT => true, // Connexions persistantes
 			);
 			$connexion = new PDO($pdo_connect_bd, $pdo_username, $pdo_password, $pdo_extra_params); // instancie la connexion
-			echo ("<br>Connexion réussie !<br>");
+			//echo ("<br>Connexion réussie !<br>");
 		}
 		catch(PDOException $e) {
 			$message_erreur = "ERREUR PDO dans " . $e->getFile() . " <br>Ligne " . $e->getLine() . " : " . $e->getMessage() . "<br>";
