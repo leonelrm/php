@@ -10,7 +10,7 @@
 <body style="text-align: center; margin: 200px;" >
     
     <div class='container'>
-    <h1>Liste des Types de Monuments</h1>
+    <h1>Liste de Type de Monument</h1>
     <table border= "1px" class="w3-table">
         <thead style = "center; border-color: black; background: black;">
             <th style= "text-align: center; color: white;">Libelle</th>
@@ -20,20 +20,16 @@
         <?php foreach($listeTypeMonument as $ligne) {?>
             <tr>
                 <td><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
-                <td> <a href="TypeMonumentVoir.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">voir</a> <a href="typemonumentchercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">Modifier</a> <a href="TypeMonumentSupprimer.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">Suprimer</a></td>            
+                <td> <a href="typemonumentchercher.php?id=<?php echo $ligne['ID_TYPE_Monument']; ?>">voir</a> <a href="typemonumentchercher.php?id=<?php echo $ligne['ID_TYPE_Monument']; ?>">Modifier</a> <a href="typemonumentchercher.php?id=<?php echo $ligne['ID_TYPE_Monument']; ?>">Suprimer</a></td>            
             </tr>           
             <?php
             }
-            ?> 
-                    
+            ?>         
         </tbody>
         
-        
+
     </table>
     </div>
-    <br>
-    <br>
-    <button><a href="frmTypeMonumentCreer.php">Ajouter Un Libelle</a> </button>   
 
 
 

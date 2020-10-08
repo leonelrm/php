@@ -6,10 +6,10 @@
 	//recuperation de l'id de type monument a chercher
 	$id= $_GET['idtypemonument'];
 
-	$typemonument= typemonument_find($id);
-	$_SESSION['typemonument'] = $typemonument;
+	$typeMonument= typemonument_find($id);
+	$_SESSION['typemonument'] = $typeMonument;
 	
-	Header("Location: frmTypeMonumentModifier.php");
+	Header("Location: frmTypeMonumentSupprimer.php");
 
     
    

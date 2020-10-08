@@ -9,7 +9,7 @@
 	$typemonument= typemonument_find($id);
 	$_SESSION['typemonument'] = $typemonument;
 	
-	Header("Location: frmTypeMonumentModifier.php");
+	Header("Location: frmTypeMonumentVoir.php");
 
     
    

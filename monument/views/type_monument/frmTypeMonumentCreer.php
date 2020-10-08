@@ -10,7 +10,7 @@
 <h1>TYPE MONUMENTS</h1>
 
 
-  <form action="TypeMonumentCreeraccept_prepare.php" method="post">
+  <form action="TypeMonumentCreeraccept.php" method="post">
     <label for="libelle">Libelle</label>
     <input type="text" id="id_libelle" name="libelle"  placeholder="Entrez  un Monument" autofocus>
     <br>

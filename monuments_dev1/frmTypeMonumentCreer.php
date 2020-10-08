@@ -17,8 +17,6 @@
     <br>
     <button type="submit" class="btn btn-primary">Valider</button>
   </form>
-  <br>
-  <br>
-  <button type="submit" class="btn btn-primary"><a href="ListeTypeMonument.php"> Retour</a></button>
+
 </body>
 </html>
