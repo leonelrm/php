@@ -5,7 +5,7 @@
       session_start();
       $listeTypeMonument = $_SESSION['listeTypeMonument'];
       
-    ?>
+     ?>
 </head>
 <body style="text-align: center; margin: 200px;" >
     
