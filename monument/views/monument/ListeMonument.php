@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <?php
       session_start();
-      $listeLigneMetro = $_SESSION['listeLigneMetro'];
+      $listeMonument = $_SESSION['listeMonument'];
       
     ?>
 </head>
@@ -17,9 +17,9 @@
             <th style= "text-align: center; color: white;">actions</th>            
         </thead>
         <tbody style = "text-align: center; border-color: black; background: gray;">
-        <?php foreach($listeLigneMetro as $ligne) {?>
+        <?php foreach($listeMonument as $ligne) {?>
             <tr>
-                <td><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
+                <td><?php echo $ligne['Nom_Monument'];?></td>
                 <td> <a href="../../controller/monument/MonumentVoir.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">voir</a>
                      <a href="../../controller/monument/MonumentModifierAcceptChercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">Modifier</a> 
                      <a href="../../controller/monument/MonumentSupprimerAcceptChercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument']; ?>">Supprimer</a></td>            

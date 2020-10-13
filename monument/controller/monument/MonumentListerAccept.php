@@ -4,6 +4,6 @@
 
     $_SESSION['listeTypeMonument'] = typemonument_findAll();
 
-    Header('Location: ../../views/typemonument/ListeTypeMonument.php');
+    Header('Location: ../../views/monument/ListeMonument.php');
 
 ?>

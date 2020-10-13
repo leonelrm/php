@@ -1,6 +1,6 @@
 <?php
 
-	require_once("../../model/typemonument/typemonumentmodel.php");
+	require_once("../../models/typemonument/typemonumentModel.php");
 	session_start();
 
 	//recuperation de l'id de type monument a chercher

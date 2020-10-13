@@ -10,6 +10,7 @@ CREATE TABLE Monument (
     Arrondissement_Monument INT(2) NOT NULL,
     Adresse_Monument VARCHAR(150) NOT NULL,
     Site_Web_Monument VARCHAR(100) NOT NULL,
+    date_creation date not null,    
     FK_ID_TYPE_MONUMENT INT(5)
 )ENGINE=InnoDB;
 
@@ -44,6 +45,14 @@ CREATE TABLE AVOIR (
     ID_AVOIR INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     FK_ID_Station INT(5),
     FK_ID_LIGNE_METRO INT(5)
+)ENGINE=InnoDB;
+
+
+CREATE TABLE UTILISATEUR (
+    ID_UTILISATEUR INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    EMAIL_UTILIZATEUR VARCHAR(255) not null unique,
+     mdp_utilisateur VARCHAR(255) not null,
+     type_utilisateur CHAR(03) NOT NULL
 )ENGINE=InnoDB;
  
  

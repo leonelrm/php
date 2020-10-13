@@ -21,17 +21,18 @@
     <input type="text" id="id_libelle" name="arr_monument"  placeholder="Entrez  arrodissement" autofocus>
     <br>
     <br>
-    <label for="adr_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse :</label>
-    <input type="text" id="id_libelle" name="adr_monument"  placeholder="Entrez  l'adresse du Monument" autofocus>
+    <label for="adr_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse :</label>
+    <input type="text" id="id_libelle" name="adr_monument"  placeholder="Entrez  l'adresse" autofocus>
     <br>
     <br>
-    <label for="site_web_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Web :</label>
-    <input type="text" id="id_libelle" name="site_web_monument"  placeholder="Entrez  le Site Web du Monument" autofocus>
+    <label for="siteweb_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Web :</label>
+    <input type="text" id="id_libelle" name="siteweb_monument"  placeholder="Entrez  le Site Web" autofocus>
     <br>
     <br>
-    <option></option>
-    <label for="type-monument">Type Monument :</label>
+    <option> </option>
+    <label for="type_monument">Type Monument :&nbsp;&nbsp;</label>
     <select name="id_type_monument"> 
+    <option></option>
     <?php foreach($listeTypeMonument as $ligne) {?> 
     
     <option value=""><?php echo $ligne['Libelle_TYPE_Monument'];?></option>    
