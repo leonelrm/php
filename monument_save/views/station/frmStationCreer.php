@@ -69,7 +69,7 @@
 				<option></option>
 				<?php foreach($listeTypeMonument as $ligne) {?> 
 				
-				<option value=""><?php echo $ligne['Libelle_TYPE_Monument'];?></option>    
+				<option value="<?php $idTypeMonument; ?>"><?php echo $ligne['Libelle_TYPE_Monument'];?></option>    
 				<?php
 				}
 				?>
