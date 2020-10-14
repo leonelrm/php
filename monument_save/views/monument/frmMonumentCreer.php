@@ -25,7 +25,34 @@
 
 	<?php
 		session_start();
-		$listeTypeMonument = $_SESSION['listeTypeMonument'];
+		require_once("../../models/typemonument/typeMonumentModel.php");
+		$listeTypeMonument = typeMonument_findAll();
+		$optChoisi = "selected";
+		if ( isset($_SESSION['msg_erreur']) ) {
+			if ($_SESSION['msg_erreur'] == "") {
+				$nomMonument = "";
+				$arrMonument = "";
+				$adrMonument = "";
+				$siteMonument = "";
+				$dateCreation = "";
+				$idTypeMonument = "";
+			} else {
+				$nomMonument = $_SESSION['nomMonument'];
+				$arrMonument = $_SESSION['arrMonument'];
+				$adrMonument = $_SESSION['adrMonument'];
+				$siteMonument = $_SESSION['siteMonument'];
+				$dateCreation = $_SESSION['dateCreation'];
+				$idTypeMonument = $_SESSION['idTypeMonument'];
+			}
+		} else {
+			$nomMonument = "";
+			$arrMonument = "";
+			$adrMonument = "";
+			$siteMonument = "";
+			$dateCreation = "";
+			$idTypeMonument = "";
+			$_SESSION['msg_erreur'] = "";
+		}
 	?>
 </head>
 <html>  
@@ -60,19 +87,27 @@
 				<label>Site Web</label>
 				<input class="w3-input w3-text-blue" type="text" name="siteMonument" value="<?php $siteMonument; ?>" autofocus>
 				
-				<label>Date du Monument</label>
-				<input class="w3-input w3-text-blue" type="text" name="dateCreation" value="<?php $dateCreation; ?>" autofocus>
+				<label>Date de Creation</label>
+				<input class="w3-input w3-text-blue" type="date" name="dateCreation" value="<?php $dateCreation; ?>" autofocus>
 				<br>
 				
 				<label>Type Monument </label>
-				<select name="idTypeMonument"> 
-				<option></option>
-				<?php foreach($listeTypeMonument as $ligne) {?> 
-				
-				<option value=""><?php echo $ligne['Libelle_TYPE_Monument'];?></option>    
-				<?php
-				}
-				?>
+				<select class="w3-select w3-text-black" name="idTypeMonument">
+					<option value="0" >Selectionner un type monument</option>
+					<?php 
+						foreach ( $listeTypeMonument as $typeMonument ){	
+					?>					
+					<option name="idTypeMonumentOption" value="<?php echo $typeMonument['ID_TYPE_Monument']; ?>"
+							<?php
+								if ( $typeMonument['ID_TYPE_Monument'] == $idTypeMonument ) {
+									echo $optChoisi;
+								}
+							?>>
+							<?php echo $typeMonument['Libelle_TYPE_Monument']; ?>
+					</option>
+					<?php 
+						}
+					?>		
 				</select>
 				<br>
 				<button type="submit" class="w3-btn w3-teal w3-round-large w3-hover-green w3-medium"><i class="fa fa-check" ></i>&nbsp;&nbsp; Enregistrer</button>

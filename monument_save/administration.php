@@ -29,12 +29,23 @@
 	?>
 </head>
 <body style= "margin: 200px; text-align: center; background: gray;">
-
-<h1>Monuments</h1>
-<a href="controllers/typemonument/TypeMonumentListerAccept.php"><button type="button" class="btn btn-primary btn-lg">Type Monument</button></a>
+<div class="w3-container w3-black">
+		<h1 >MONUMENTS</h1>
+	</div>
+	<br>
+	<div class="w3-container">
+		<br>
+		<div class="w3-container w3-responsive">
+		<a href="controllers/typemonument/TypeMonumentListerAccept.php"><button type="button" class="btn btn-primary btn-lg">Type Monument</button></a>
 <a href="controllers/lignemetro/LigneMetroListerAccept.php"><button type="button" class="btn btn-primary btn-lg">Ligne metro</button></a>
 <a href="controllers/station/stationListerAccept.php"><button type="button" class="btn btn-primary btn-lg">Stations</button></a>
 <a href="controllers/monument/MonumentListerAccept.php"><button type="button" class="btn btn-primary btn-lg">Monuments</button></a>
-</body>
+		</div>
+		<br>
+		<footer class="w3-brown w3-padding-large">
+			<a href="../../administration.php" ><button class="w3-btn w3-aqua w3-round-large w3-hover-green w3-medium"><i class="fa fa-hand-o-left" ></i>&nbsp;&nbsp;Retour </button></a>
+		</footer>	
+		<br>			
+	</div>
 </html>
 

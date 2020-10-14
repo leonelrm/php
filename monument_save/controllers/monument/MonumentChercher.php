@@ -6,7 +6,7 @@
 	//recuperation de l'id de type monument a chercher
 	$id= $_GET['idMonument'];
 	$traitement = $_GET['traitement'];
-
+	$_SESSION['idMonument']= $id;
 	//recuperation de type monument
 	$monument= monument_find($id);
 
@@ -19,7 +19,11 @@
 		if($traitement == 2){
 			Header('Location: ../../views/monument/frmMonumentModifier.php');	
 		}else{
+			if($traitement == 3){
 			Header('Location: ../../views/monument/frmMonumentSupprimer.php');							
+			}else{
+			Header('Location: ../../views/monument/frmupload.php');	
+			}
 		}
 	}
 	

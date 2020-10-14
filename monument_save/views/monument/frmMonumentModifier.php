@@ -35,7 +35,7 @@
 <body>
 <div class="w3-container w3-black">
 
-		<h1 >TYPE MONUMENT</h1>
+		<h1 >MONUMENT</h1>
 	</div>
 	<br>
 	
@@ -45,10 +45,10 @@
 		</div>
 		<div class="w3-half w3-light-grey w3-border w3-card-4">
 			<div class="w3-container w3-blue">
-				<h2>Modification d'un type monument </h2>
+				<h2>Modification d'un monument </h2>
 			</div>
 			<br><br>
-			<form class="w3-container" action="../../controllers/typemonument/TypeMonumentModifierAccept.php" method="post">
+			<form class="w3-container" action="../../controllers/monument/MonumentModifierAccept.php" method="post">
 				<p class="w3-text-red"><?php echo $_SESSION['msg_erreur'];?></p>
 				<br>
 				<label>Libellé</label>

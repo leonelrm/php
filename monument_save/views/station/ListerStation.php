@@ -32,24 +32,19 @@
 </head>
 <body>
 	<div class="w3-container w3-black">
-		<h1 >MONUMENTS</h1>
+		<h1 >STATIONS</h1>
 	</div>
 	<br>
 	<div class="w3-container">
 		<header class="w3-container w3-sand">
-			<h3 class="titre">Liste des monuments </h3>
+			<h3 class="titre">Liste des Metro Station </h3>
 		</header>
 		<br>
 		<div class="w3-container w3-responsive">
 			<table class="w3-table w3-striped w3-border w3-hoverable w3-small">
 				<thead>
 					<tr class="w3-dark-grey">
-						<th>Nom Monument</th>
-						<th>Arrondissement</th>
-						<th>Adresse</th>
-						<th>Site web</th>
-						<th>Date Creation</th>
-						<th>Type Monument</th>
+						<th>Nom Station</th>						
 						<th>Actions</th>
 					</tr>
 				</thead>

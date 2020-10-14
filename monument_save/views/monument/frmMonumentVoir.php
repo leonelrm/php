@@ -26,13 +26,13 @@
     <link rel="stylesheet" href="../../css/main.css" />
 	<?php
 		session_start();
-		$typeMonument = $_SESSION['typemonument'];
+		$Monument = $_SESSION['monument'];
 	?>
 </head>
 <body>
 <div class="w3-container w3-black">
 
-<h1 >TYPE MONUMENT</h1>
+<h1 >MONUMENT</h1>
 </div>
 <br>
 
@@ -42,17 +42,27 @@
 </div>
 <div class="w3-half w3-light-grey w3-border w3-card-4">
 	<div class="w3-container w3-blue">
-		<h2>Voir un type monument </h2>
+		<h2>Voir un Monument </h2>
 	</div>
 	<br><br>
 	<form class="w3-container">
-		<label>Libellé</label>
-		<input class="w3-input w3-text-blue" type="text" name="libelle"  value="<?php echo $typeMonument['Libelle_TYPE_Monument']; ?>" disabled>
-		<input type="hidden" name="idTypeMonument" value="<?php echo $typeMonument['ID_TYPE_Monument']; ?>" >
+		<label>Nom Monument</label>
+		<input class="w3-input w3-text-blue" type="text" name="nomMonument"  value="<?php echo $Monument['Nom_Monument']; ?>" disabled>
+		<label>Arrondissement</label>
+		<input class="w3-input w3-text-blue" type="text" name="arrMonument"  value="<?php echo $Monument['Arrondissement_Monument']; ?>" disabled>
+		<label>Adresse</label>
+		<input class="w3-input w3-text-blue" type="text" name="adrMonument"  value="<?php echo $Monument['Adresse_Monument']; ?>" disabled>
+		<label>site web</label>
+		<input class="w3-input w3-text-blue" type="text" name="siteMonument"  value="<?php echo $Monument['Site_Web_Monument']; ?>" disabled>
+		<label>Date de Creation</label>
+		<input class="w3-input w3-text-blue" type="date" name="dateMonument"  value="<?php echo $Monument['Date_Monument']; ?>" disabled>
+		<label>Type Monument</label>
+		<input class="w3-input w3-text-blue" type="text" name="idtypeMonument"  value="<?php echo $typeMonument['ID_TYPE_Monument']; ?>" disabled>
+		<input type="hidden" name="idMonument" value="<?php echo $Monument['ID_Monument']; ?>" >
 		<br><br>		
 	</form>	
 <footer class="w3-brown w3-padding-large w3-right-align">
-	<a href="../../controllers/typemonument/TypeMonumentListerAccept.php" ><button class="w3-btn w3-aqua w3-round-large w3-hover-green w3-medium"><i class="fa fa-hand-o-left" ></i>&nbsp;&nbsp;Retour </button></a>
+	<a href="../../controllers/monument/MonumentListerAccept.php" ><button class="w3-btn w3-aqua w3-round-large w3-hover-green w3-medium"><i class="fa fa-hand-o-left" ></i>&nbsp;&nbsp;Retour </button></a>
 </footer>				
 </div>
 <div class="w3-quarter w3-container">
