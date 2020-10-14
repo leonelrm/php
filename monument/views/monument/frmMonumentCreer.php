@@ -13,25 +13,25 @@
 
 
   <form action="../../controller/monument/MonumentCreeraccept.php" method="post">
-    <label for="nom_monument">Nom du Monument :</label>
-    <input type="text" id="id_libelle" name="nom_monument"  placeholder="Entrez  le Nom du Monument" autofocus>
+    <label for="nomMonument">Nom du Monument :</label>
+    <input type="text" id="id_libelle" name="nomMonument"  placeholder="Entrez  le Nom du Monument" autofocus>
     <br>
     <br>
-    <label for="arr_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arrodissement :</label>
-    <input type="text" id="id_libelle" name="arr_monument"  placeholder="Entrez  arrodissement" autofocus>
+    <label for="arrMonument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arrodissement :</label>
+    <input type="text" id="id_libelle" name="arrMonument"  placeholder="Entrez  arrodissement" autofocus>
     <br>
     <br>
-    <label for="adr_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse :</label>
-    <input type="text" id="id_libelle" name="adr_monument"  placeholder="Entrez  l'adresse" autofocus>
+    <label for="adrMonument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adresse :</label>
+    <input type="text" id="id_libelle" name="adrMonument"  placeholder="Entrez  l'adresse" autofocus>
     <br>
     <br>
-    <label for="siteweb_monument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Web :</label>
-    <input type="text" id="id_libelle" name="siteweb_monument"  placeholder="Entrez  le Site Web" autofocus>
+    <label for="siteMonument">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Web :</label>
+    <input type="text" id="id_libelle" name="siteMonument"  placeholder="Entrez  le Site Web" autofocus>
     <br>
     <br>
     <option> </option>
-    <label for="type_monument">Type Monument :&nbsp;&nbsp;</label>
-    <select name="id_type_monument"> 
+    <label>Type Monument</label>
+    <select name="idTypeMonument"> 
     <option></option>
     <?php foreach($listeTypeMonument as $ligne) {?> 
     
