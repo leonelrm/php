@@ -1,10 +1,10 @@
 <?php
 	
-	require_once("../../models/typemonument/typemonumentModel.php");
+	require_once("../../models/monument/MonumentModel.php");
 	session_start();
 	
-	$_SESSION['listeMonument'] = typeMonument_findAll();
+	$_SESSION['listeMonument'] = Monument_findAll();
 	
-	Header("Location: ../../views/typemonument/ListerMonument.php");
+	Header("Location: ../../views/monument/ListerMonument.php");
 	
 ?>

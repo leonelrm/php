@@ -41,7 +41,7 @@
 		return $monumenttrouve;
 	}
 
-	function monument_Insert( $nomMonument, $arrMonument, $adrMonument, $siteMonument, $dateCreation, $idTypeMonument) {
+	function monument_Insert($nomMonument, $arrMonument, $adrMonument, $siteMonument, $dateCreation, $idTypeMonument) {
 		
 		// sécurisation des données
         $vNomMonument = filter_var($nomMonument, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -103,7 +103,7 @@
         " Adresse_Monument = :vAdrMonument,".
         " Site_Web_Monument = :vSiteMonument,".
         " date_creation = :vDateMonument " .
-        " FK_ID_TYPE_MONUMENT = :vIdTypeMonument"
+        " FK_ID_TYPE_MONUMENT = :vIdTypeMonument".
         " where ID_Monument = :vMonumentId";
 
 

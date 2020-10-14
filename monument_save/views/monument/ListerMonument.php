@@ -27,34 +27,45 @@
 	<?php
 		session_start();
 		$_SESSION['msg_erreur'] = "";
-		$listeTypemonument = $_SESSION['listeTypemonument'];
+		$listeMonument = $_SESSION['listeMonument'];
 	?>
 </head>
 <body>
 	<div class="w3-container w3-black">
-		<h1 >TYPE MONUMENT</h1>
+		<h1 >MONUMENTS</h1>
 	</div>
 	<br>
 	<div class="w3-container">
 		<header class="w3-container w3-sand">
-			<h3 class="titre">Liste des types monuments </h3>
+			<h3 class="titre">Liste des monuments </h3>
 		</header>
 		<br>
 		<div class="w3-container w3-responsive">
 			<table class="w3-table w3-striped w3-border w3-hoverable w3-small">
 				<thead>
 					<tr class="w3-dark-grey">
-						<th>Libellé</th>
+						<th>Nom Monument</th>
+						<th>Arrondissement</th>
+						<th>Adresse</th>
+						<th>Site web</th>
+						<th>Date Creation</th>
+						<th>Type Monument</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
 				<tbody>
-					<?php foreach ($listeTypemonument as $ligne ) {?>	
+					<?php foreach ($listeMonument as $ligne ) {?>	
 					<tr>
+						<td class="w3-text-black"><?php echo $ligne['ID_Monument'];?></td>
+						<td class="w3-text-black"><?php echo $ligne['Adresse_Monument'];?></td>
 						<td class="w3-text-black"><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
-						<td><a href="../../controllers/typemonument/TypeMonumentChercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument'] ?>&traitement=1"><button class="w3-btn w3-blue w3-round-large w3-hover-green w3-small"><i class="fa fa-eye" ></i>&nbsp;&nbsp;Voir</button></a>&nbsp;&nbsp;
-						<a href="../../controllers/typemonument/TypeMonumentChercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument'] ?>&traitement=2"><button class="w3-btn w3-yellow w3-round-large w3-hover-green w3-small"><i class="fa fa-pencil-square-o" ></i>&nbsp;&nbsp;Modifier</button></a>&nbsp;&nbsp;
-						<a href="../../controllers/typemonument/TypeMonumentChercher.php?idtypemonument=<?php echo $ligne['ID_TYPE_Monument'] ?>&traitement=3"><button class="w3-btn w3-red w3-round-large w3-hover-green w3-small"><i class="fa fa-trash" ></i>&nbsp;&nbsp;Supprimer</button></a></td>
+						<td class="w3-text-black"><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
+						<td class="w3-text-black"><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
+						<td class="w3-text-black"><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
+						<td class="w3-text-black"><?php echo $ligne['Libelle_TYPE_Monument'];?></td>
+						<td><a href="../../controllers/typemonument/TypeMonumentChercher.php?idmonument=<?php echo $ligne['ID_Monument'] ?>&traitement=1"><button class="w3-btn w3-blue w3-round-large w3-hover-green w3-small"><i class="fa fa-eye" ></i>&nbsp;&nbsp;Voir</button></a>&nbsp;&nbsp;
+						<a href="../../controllers/typemonument/TypeMonumentChercher.php?idmonument=<?php echo $ligne['ID_Monument'] ?>&traitement=2"><button class="w3-btn w3-yellow w3-round-large w3-hover-green w3-small"><i class="fa fa-pencil-square-o" ></i>&nbsp;&nbsp;Modifier</button></a>&nbsp;&nbsp;
+						<a href="../../controllers/typemonument/TypeMonumentChercher.php?idmonument=<?php echo $ligne['ID_Monument'] ?>&traitement=3"><button class="w3-btn w3-red w3-round-large w3-hover-green w3-small"><i class="fa fa-trash" ></i>&nbsp;&nbsp;Supprimer</button></a></td>
 					</tr>
 					<?php
 						}
@@ -64,7 +75,7 @@
 		</div>
 		<br>
 		<footer class="w3-brown w3-padding-large">
-			<a href="frmTypeMonumentCreer.php" >&nbsp;&nbsp;<button class="w3-btn w3-teal w3-round-large w3-hover-green w3-medium"><i class="fa fa-plus-circle" ></i>&nbsp;&nbsp;Créer</button></a>
+			<a href="frmMonumentCreer.php" >&nbsp;&nbsp;<button class="w3-btn w3-teal w3-round-large w3-hover-green w3-medium"><i class="fa fa-plus-circle" ></i>&nbsp;&nbsp;Créer</button></a>
 			&nbsp;&nbsp;<a href="../../administration.php" ><button class="w3-btn w3-aqua w3-round-large w3-hover-green w3-medium"><i class="fa fa-hand-o-left" ></i>&nbsp;&nbsp;Retour </button></a>
 		</footer>	
 		<br>			

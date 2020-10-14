@@ -30,7 +30,7 @@
     <br>
     <br>
     <option> </option>
-    <label>Type Monument </label>
+    <label for="type_monument">Type Monument :&nbsp;&nbsp;</label>
     <select name="id_type_monument"> 
     <option></option>
     <?php foreach($listeTypeMonument as $ligne) {?> 
