@@ -29,7 +29,7 @@ if ( empty($nomMonument) ) {
 if ( empty($arrMonument) ) {
 	$_SESSION['msg_erreur'] = $_SESSION['msg_erreur'] . "Arrondissement non renseigné<br>";
 } else {
-	if ( intval($arrMonument) < 0 || intval($arrMonument) > 20 ) {
+	if ( intval($arrMonument) < 1 || intval($arrMonument) > 20 ) {
 		$_SESSION['msg_erreur'] = $_SESSION['msg_erreur'] . "Arrondissement compris entre 1 et 20<br>";			
 	}
 }

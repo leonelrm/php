@@ -48,13 +48,15 @@ CREATE TABLE AVOIR (
 )ENGINE=InnoDB;
 
 
-CREATE TABLE UTILISATEURS (
+CREATE TABLE utilisateur (
     ID_UTILISATEUR INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     EMAIL_UTILIZATEUR VARCHAR(255) not null unique,
      mdp_utilisateur VARCHAR(255) not null,
      type_utilisateur CHAR(03) NOT NULL
 )ENGINE=InnoDB;
- 
+
+INSERT INTO utilisateur VALUES
+(1, 'admin@roca.ovh', 'admin', 'ADM');
  
 ALTER TABLE Monument
 ADD CONSTRAINT FK_TYPE_MONUMENT

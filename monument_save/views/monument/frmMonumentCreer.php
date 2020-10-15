@@ -88,7 +88,7 @@
 				<input class="w3-input w3-text-blue" type="text" name="siteMonument" value="<?php $siteMonument; ?>" autofocus>
 				
 				<label>Date de Creation</label>
-				<input class="w3-input w3-text-blue" type="text" name="dateCreation" value="<?php $dateCreation; ?>" autofocus>
+				<input class="w3-input w3-text-blue" type="date" name="dateCreation" value="<?php $dateCreation; ?>" autofocus>
 				<br>
 				
 				<label>Type Monument </label>

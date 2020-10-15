@@ -55,9 +55,9 @@
 		<label>site web</label>
 		<input class="w3-input w3-text-blue" type="text" name="siteMonument"  value="<?php echo $Monument['Site_Web_Monument']; ?>" disabled>
 		<label>Date de Creation</label>
-		<input class="w3-input w3-text-blue" type="date" name="dateMonument"  value="<?php echo $Monument['Date_Monument']; ?>" disabled>
+		<input class="w3-input w3-text-blue" type="date" name="dateCreation"  value="<?php echo $Monument['date_creation']; ?>" disabled>
 		<label>Type Monument</label>
-		<input class="w3-input w3-text-blue" type="text" name="idtypeMonument"  value="<?php echo $typeMonument['FK_ID_TYPE_MONUMENT']; ?>" disabled>
+		<input class="w3-input w3-text-blue" type="text" name="idtypeMonument"  value="<?php echo $Monument['FK_ID_TYPE_MONUMENT']; ?>" disabled>
 		<input type="hidden" name="idMonument" value="<?php echo $Monument['ID_Monument']; ?>" >
 		<br><br>		
 	</form>	

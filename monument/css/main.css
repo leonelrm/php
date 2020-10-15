@@ -1,0 +1,29 @@
+body{
+	font-family: "Palatino Linotype","Times New Roman", Georgia, Serif;
+	/*background-color: #CECECE;*/	
+}
+
+label {
+	font-weight: bold;
+	color: black;
+}
+
+button {
+	font-weight: bold;
+}
+
+input {
+	font-weight: bold;
+	color: #040403;
+}
+
+#zoneImage {
+	width: 50px; 
+	height: 50px;	
+}
+
+td,tr {
+	vertical-align: middle;
+}
+
+
