@@ -57,7 +57,7 @@
 		<label>Date de Creation</label>
 		<input class="w3-input w3-text-blue" type="date" name="dateMonument"  value="<?php echo $Monument['Date_Monument']; ?>" disabled>
 		<label>Type Monument</label>
-		<input class="w3-input w3-text-blue" type="text" name="idtypeMonument"  value="<?php echo $typeMonument['ID_TYPE_Monument']; ?>" disabled>
+		<input class="w3-input w3-text-blue" type="text" name="idtypeMonument"  value="<?php echo $typeMonument['FK_ID_TYPE_MONUMENT']; ?>" disabled>
 		<input type="hidden" name="idMonument" value="<?php echo $Monument['ID_Monument']; ?>" >
 		<br><br>		
 	</form>	

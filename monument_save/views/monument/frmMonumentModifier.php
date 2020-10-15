@@ -24,9 +24,13 @@
     <link rel="stylesheet" href="../../css/main.css" />
 	<?php
 		session_start();
-		$typeMonument = $_SESSION['typemonument'];
-		$libelle =  $typeMonument['Libelle_TYPE_Monument'];
-		$idTypeMonument = $typeMonument['ID_TYPE_Monument'];
+		$Monument = $_SESSION['monument'];
+		$nomMonument =  $Monument['Nom_Monument'];
+		$arrMonument =  $Monument['Arrondissement_Monument'];
+		$adrMonument =  $Monument['Adresse_Monument'];
+		$siteMonument =  $Monument['Site_Web_Monument'];
+		$dateCreation =  $Monument['Date_Creation'];
+		$idTypeMonument = $Monument['ID_Monument'];
 		
 		
 	?>
