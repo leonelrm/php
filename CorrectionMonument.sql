@@ -49,8 +49,8 @@ CREATE TABLE AVOIR (
 
 
 CREATE TABLE utilisateur (
-    ID_UTILISATEUR INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    EMAIL_UTILIZATEUR VARCHAR(255) not null unique,
+    id_utilisateur INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    email_utilisateur VARCHAR(255) not null unique,
      mdp_utilisateur VARCHAR(255) not null,
      type_utilisateur CHAR(03) NOT NULL
 )ENGINE=InnoDB;
